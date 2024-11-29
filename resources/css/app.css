@@ -1,0 +1,313 @@
+@charset "UTF-8";
+
+/*-----------------------------------------------------------
+  共通
+-----------------------------------------------------------*/
+
+:root {
+  --main-color: #F8921A;
+}
+
+/* Bootstrap Override */
+body{
+  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+  font-size: 1rem;
+  background-color: #FFF;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+.cursor-point:hover {
+  cursor: pointer;
+}
+
+.btn{
+  font-size: 1rem;
+    line-height: 1.5;
+}
+
+.btn-primary {
+  background: #524A4A;
+  color: #FFF;
+  border-color: #251D1D;
+}
+
+.btn-primary:hover, .btn-primary:focus, 
+.btn-primary:active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary:active.focus,
+.btn-primary.active, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary, 
+.open > .dropdown-toggle.btn-primary:hover,
+.open > .dropdown-toggle.btn-primary:focus, 
+.open > .dropdown-toggle.btn-primary.focus,
+.btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary.focus {
+    background: #251D1D;
+    color: #FFF;
+	  border-color: #251D1D;
+}
+
+.btn-primary.outline {
+    border: 3px solid #251D1D;
+    color: #FFF;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
+  box-shadow:none !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow:none !important;
+}
+
+.btn-outline-primary {
+  color: #524A4A;
+  border-color: #524A4A;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #524A4A;
+  border-color: #524A4A;
+}
+
+.btn-outline-primary:focus, .btn-primary:focus {
+box-shadow: 0 0 0 0.2rem rgba(82, 74, 74, 0.5);
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #524A4A;
+  border-color: #524A4A;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #524A4A;
+  border-color: #524A4A;
+}
+
+.btn-sm, .btn-group-sm > .btn {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
+.card img{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* material-icon */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/*-----------------------------------------------------------
+  視聴画面 
+-----------------------------------------------------------*/
+
+/* ログイン */
+.login-name{
+  font-size: 16px;
+}
+
+.login-body{
+  display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.form-login {
+  width: 100%;
+  max-width: 420px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group > input, .form-label-group > label {
+  height: 3.125rem;
+  padding: .75rem;
+}
+
+.form-label-group > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  line-height: 1.5;
+  color: #495057;
+  pointer-events: none;
+  cursor: text;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input:not(:placeholder-shown) ~ label {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  font-size: 12px;
+  color: #777;
+}
+
+.form-label-group > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  line-height: 1.5;
+  color: #495057;
+  pointer-events: none;
+  cursor: text;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+/* courses-list */
+.courses-list .lead{
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+  padding: 2rem 2rem;
+  background-color: #fff;
+}
+
+@media (min-width: 576px) {
+  .jumbotron {
+      padding: 2rem 2rem;
+  }
+}
+
+.card-body .card-text{
+  border-bottom: 2px solid var(--main-color);
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.card-body .card-text a {
+  color: #524A4A;
+  text-decoration: none;
+}
+
+.card-body .card-text i{
+  position: relative;
+  top: 7px;
+  margin-right: 8px;
+  font-size: 30px;
+  color: var(--main-color);
+}
+
+.card-body .text-volume {
+  float: right;
+  position: relative;
+  top: 10px;
+  color: #6c757d;
+  font-size: 16px;
+}
+
+.card-body .btn{
+  margin-top: 10px;
+}
+
+.card-body .btn i {
+  position: relative;
+  top: 3px;
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+/* contents */
+h1.title, h2.title {
+  padding: 9px 14px 9px 34px;
+  margin-bottom: 14px;
+  font-size: 1em;
+  /* background: whitesmoke url(../img/e.png) no-repeat 9px center; */
+  background: whitesmoke;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+}
+
+.highlight {
+  padding: 9px 14px;
+  margin-bottom: 14px;
+  background-color: #f5f5f5;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.fileBox {
+  margin-top: 10px;
+  margin-right: 10px;
+  float: left;
+}
+
+.fileBox a{
+  display: inline-block; 
+  width: 64px;
+  height: 64px;
+}
+
+.fileBox img {
+  width: 100%;
+  height: 100%;
+}
+
+/* video player */
+.movie {
+  width: 864px;
+  border: 1px solid #000000;
+}
+
+/*-----------------------------------------------------------
+  管理画面 
+-----------------------------------------------------------*/
+#dashboard-login .card img {
+  width: auto;
+  height: 100%;
+  aspect-ratio: auto;
+}
+
+#dashboard-login .btn-primary {
+  color: #fff;
+  background-color: #4e73df;
+  border-color: #4e73df;
+}
+
+#dashboard-login .btn-user {
+  font-size: 0.8rem;
+  border-radius: 10rem;
+  padding: 0.75rem 1rem;
+}
